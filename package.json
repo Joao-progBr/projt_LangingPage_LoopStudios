@@ -1,0 +1,33 @@
+{
+  "name": "projeto-pessoal-pagina-inicial-do-loopstudio",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+     
+    "less": "lessc src/styles/main.less | cleancss -o build/styles/main.min.css",
+    "watch-less": "chokidar \"src/styles/**/*.less\" -c \"npm run less\"",
+
+    "terser": "terser src/scripts/main.js -o build/scripts/main.min.js -c -m",
+    "watch-js": "chokidar \"src/scripts/**/*.js\" -c \"npm run js\"",
+
+    "copy-img": "cpy \"src/images/**/*\" build/images --parents",
+    "watch-img": "chokidar \"src/images/**/*\" -c \"npm run copy-img\"",
+
+    "build": "npm run less && npm run terser && npm run copy-img",
+    "dev": "concurrently \"npm:watch-less\" \"npm:watch-terser\" \"npm:watch-img\"",
+
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "chokidar-cli": "^3.0.0",
+    "clean-css-cli": "^5.6.3",
+    "concurrently": "^9.2.0",
+    "cpy-cli": "^6.0.0",
+    "less": "^4.4.0",
+    "terser": "^5.43.1"
+  }
+}
