@@ -65,17 +65,14 @@
             </section>
 
             <section class="creators">
-                <div class="creators__more">
-                    <h2>Our creations</h2>
-                    <a>See all</a>
-                </div>
+                <h2>Our creations</h2>
                 <div>
                     <ul class="product__grid">
                         <li class="product__cards">
                             <picture>
-                                <source srcset="./build/images/desktop/image-deep-earth.jpg" media="(min-width: 768px)">
+                                <source srcset="./build/images/desktop/image-deep-earth.jpg" media="(min-width: 601px)">
 
-                                <source srcset="./build/images/desktop/image-deep-earth.jpg" media="(max-width: 767px)">
+                                <source srcset="./build/images/mobile/image-deep-earth.jpg" media="(max-width: 600px)">
                                 <img src="./build/images/desktop/image-deep-earth.jpg" alt="Banner principal">
                             </picture>
                             <h3>Deep <br> earth</h3>
@@ -83,9 +80,10 @@
                         <li class="product__cards">
                             <picture>
                                 <source srcset="./build/images/desktop/image-night-arcade.jpg"
-                                    media="(min-width: 768px)">
+                                    media="(min-width: 601px)">
 
-                                <source srcset="img/banner-mobile.jpg" media="(max-width: 767px)">
+                                <source srcset="./build//images/mobile/image-night-arcade.jpg"
+                                    media="(max-width: 600px)">
                                 <img src="./build/images/desktop/image-night-arcade.jpg" alt="Banner principal">
                             </picture>
                             <h3>Night <br> arcade</h3>
@@ -93,27 +91,27 @@
                         <li class="product__cards">
                             <picture>
                                 <source srcset="./build/images/desktop/image-soccer-team.jpg"
-                                    media="(min-width: 768px)">
+                                    media="(min-width: 601px)">
 
-                                <source srcset="img/banner-mobile.jpg" media="(max-width: 767px)">
+                                <source srcset="./build/images/mobile/image-soccer-team.jpg" media="(max-width: 600px)">
                                 <img src="./build/images/desktop/image-soccer-team.jpg" alt="Banner principal">
                             </picture>
                             <h3>Soccer <br> Team Vr</h3>
                         </li>
                         <li class="product__cards">
                             <picture>
-                                <source srcset="./build/images/desktop/image-grid.jpg" media="(min-width: 768px)">
+                                <source srcset="./build/images/desktop/image-grid.jpg" media="(min-width: 601px)">
 
-                                <source srcset="img/banner-mobile.jpg" media="(max-width: 767px)">
+                                <source srcset="./build/images/mobile/image-grid.jpg" media="(max-width: 600px)">
                                 <img src="./build/images/desktop/image-grid.jpg" alt="Banner principal">
                             </picture>
                             <h3>The <br> Grid</h3>
                         </li>
                         <li class="product__cards">
                             <picture>
-                                <source srcset="./build/images/desktop/image-from-above.jpg" media="(min-width: 768px)">
+                                <source srcset="./build/images/desktop/image-from-above.jpg" media="(min-width: 601px)">
 
-                                <source srcset="img/banner-mobile.jpg" media="(max-width: 767px)">
+                                <source srcset="./build/images/mobile/image-from-above.jpg" media="(max-width: 600px)">
                                 <img src="./build/images/desktop/image-from-above.jpg" alt="Banner principal">
                             </picture>
                             <h3>From Up <br> Above Vr</h3>
@@ -121,33 +119,36 @@
                         <li class="product__cards">
                             <picture>
                                 <source srcset="./build/images/desktop/image-pocket-borealis.jpg"
-                                    media="(min-width: 768px)">
+                                    media="(min-width: 601px)">
 
-                                <source srcset="img/banner-mobile.jpg" media="(max-width: 767px)">
+                                <source srcset="./build/images/mobile/image-pocket-borealis.jpg"
+                                    media="(max-width: 600px)">
                                 <img src="./build/images/desktop/image-pocket-borealis.jpg" alt="Banner principal">
                             </picture>
                             <h3>Pocket <br> Borealis</h3>
                         </li>
                         <li class="product__cards">
                             <picture>
-                                <source srcset="./build/images/desktop/image-curiosity.jpg" media="(min-width: 768px)">
+                                <source srcset="./build/images/desktop/image-curiosity.jpg" media="(min-width: 601px)">
 
-                                <source srcset="img/banner-mobile.jpg" media="(max-width: 767px)">
+                                <source srcset="./build/images/mobile/image-curiosity.jpg" media="(max-width: 600px)">
                                 <img src="./build/images/desktop/image-curiosity.jpg" alt="Banner principal">
                             </picture>
                             <h3>The <br> Curiosity</h3>
                         </li>
                         <li class="product__cards">
                             <picture>
-                                <source srcset="./build/images/desktop/image-fisheye.jpg" media="(min-width: 768px)">
+                                <source srcset="./build/images/desktop/image-fisheye.jpg" media="(min-width: 601px)">
 
-                                <source srcset="img/banner-mobile.jpg" media="(max-width: 767px)">
+                                <source srcset="./build/images/mobile/image-fisheye.jpg" media="(max-width: 600px)">
                                 <img src="./build/images/desktop/image-fisheye.jpg" alt="Banner principal">
                             </picture>
                             <h3>Make It <br> Fisheye</h3>
                         </li>
                     </ul>
                 </div>
+                <button class="btn" type="button">See all</button>
+
             </section>
         </div>
     </main>
@@ -155,10 +156,10 @@
         <div class="container">
             <div class="footer__flex">
                 <div>
-                    <div class="footer__nav">
+                    <div>
                         <img src="./build/images/logo.svg" alt="">
                     </div>
-                    <nav class="nav ">
+                    <nav class="footer__nav">
                         <ul class="nav__list">
                             <li>
                                 <a href="#">About</a>
@@ -179,8 +180,8 @@
                     </nav>
                 </div>
                 <div>
-                    <nav class="nav footer__nav">
-                        <ul class="nav__list">
+                    <div class="footer__right">
+                        <ul class="footer__socialLinks ">
                             <li>
                                 <a href="#">
                                     <img src="./build/images/icon-facebook.svg" alt="">
@@ -188,26 +189,21 @@
                             </li>
                             <li>
                                 <a href="#">
-                                    <img src="./build/images/icon-facebook.svg" alt="">
+                                    <img src="./build/images/icon-twitter.svg" alt="">
                                 </a>
                             </li>
                             <li>
                                 <a href="#">
-                                    <img src="./build/images/icon-facebook.svg" alt="">
+                                    <img src="./build/images/icon-pinterest.svg" alt="">
                                 </a>
                             </li>
                             <li>
                                 <a href="#">
-                                    <img src="./build/images/icon-facebook.svg" alt="">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="./build/images/icon-facebook.svg" alt="">
+                                    <img src="./build/images/icon-instagram.svg" alt="">
                                 </a>
                             </li>
                         </ul>
-                    </nav>
+                    </div>
                     <span style="color: #fff;">© 2021 Loopstudios. All rights reserved.</span>
                 </div>
             </div>
