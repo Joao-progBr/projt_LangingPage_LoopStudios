@@ -8,7 +8,7 @@
     "watch-less": "chokidar \"src/styles/**/*.less\" -c \"npm run less\"",
 
     "terser": "terser src/scripts/main.js -o build/scripts/main.min.js -c -m",
-    "watch-js": "chokidar \"src/scripts/**/*.js\" -c \"npm run js\"",
+    "watch-terser": "chokidar \"src/scripts/**/*.js\" -c \"npm run terser\"",
 
     "copy-img": "cpy \"src/images/**/*\" build/images --parents",
     "watch-img": "chokidar \"src/images/**/*\" -c \"npm run copy-img\"",
