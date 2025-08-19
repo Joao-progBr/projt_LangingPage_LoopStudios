@@ -1,15 +1,27 @@
+@import './vars.less';
+
 .footer{
     background-color: #000;
     padding: 4em;
 
-    &__nav{
-        margin-top: 1em;
-    }
+    &__logo{
+        margin-bottom: 2em;
 
+        img{
+            max-width: 140px;
+        }
+    }
+    
     &__flex{
         display: flex;
         justify-content: space-between;
         align-items: center;
+    }
+
+
+    // footer-right
+    &__right{
+        text-align: right;
     }
 
     &__socialLinks{
@@ -17,10 +29,16 @@
         align-items: center;
         gap: 1em;
         justify-content: right;
+        margin-bottom: 2em;
+        
+        a{
+            cursor: pointer;
+        }
     }
 
-    &__right{
-        margin-bottom: 1em;
-    }
 
+    // copy
+    &__copyRight{
+        color: @colorDarkGray ;
+    }
 }
