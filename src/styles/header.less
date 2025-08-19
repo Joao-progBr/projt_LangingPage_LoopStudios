@@ -3,24 +3,25 @@
 .header {
     background-image: url(../../build/images/desktop/image-hero.jpg);
     background-repeat: no-repeat;
-    background-size: contain;
-    background-blend-mode: multiply;
-    padding: 65px 165px;
+    background-size: cover;
+    width: 100%;
+    padding: 5em;
     
-
+    
     &__container{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-bottom: 10em;
+        margin-bottom: 12em;
+        // padding: 5em;
     }
 
     &__title{
         max-width: 900px;
         padding: 1em;
         font-size: 3em;
-        margin-bottom: 3em ;
         border: 3px solid @colorWhite;
+        margin-bottom: 2em;
         
         h1{
             font-family: "Josefin Sans", sans-serif;
@@ -32,12 +33,15 @@
 }
 
 .nav{
+
+    img{
+        display: none;
+    }
     &__list{
         display: grid;
         grid-template-columns: repeat(5, minmax(min-content, min-content));
         grid-gap: 32px;
-        list-style: none;
-
+       
         a{
             text-decoration: none;
             color: @colorWhite;

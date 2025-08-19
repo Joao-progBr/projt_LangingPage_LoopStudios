@@ -3,20 +3,19 @@
         width: 90%;
     }
 
+    // HEADER
     .header{
-
-        // padding: 0;
-        
+        padding: 5em;   
         &__container{
-            
-            padding: 2em;
+            margin-bottom: 8em;
+            align-items: center;
         }
 
         &__title{
             max-width: 600px;
             padding: 1em;
             font-size: 2em;
-            margin-bottom: 3em ;
+            // margin-bottom: 3em ;
             border: 3px solid @colorWhite;
             text-align: center;
         
@@ -42,12 +41,12 @@
        &__img{
         // width: 100%;
         text-align: center;
-
        }
 
         &__text{
             position: static;
             text-align: center;
+            padding: 6em 12em;
         }
     }
 
@@ -78,6 +77,36 @@
 
 
 @media (max-width: 1200px) {
+
+    .header{
+        
+        &__title{
+            padding: 1em;
+        }
+    }
+
+    .nav{
+        img{
+            display: block;
+        }
+    }
+    .nav__list{
+        display: none;
+    }
+
+    .about{
+        
+        &__text{
+            padding: 3em 10em;
+
+            h2{
+                font-size: 2em;
+            }
+        }
+    }
+
+    
+
     // estilizando o btn da section creators
     .creators{
 
@@ -115,9 +144,38 @@
         &__socialLinks{
             margin-top: 2em;
             justify-content: center;
-
         }
     }
-
-
 }
+
+
+
+
+
+// mobile
+@media (max-width: 900px){
+    .header{
+        background-image: url('../images/mobile/image-hero.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 3em;
+    }
+    
+    // section about
+    .about{
+        img{
+            width: 100%;
+        }
+        &__text{
+            padding: 2em;
+
+            h2{
+                font-size: 2em;
+            }
+        }
+    }
+}
+
+
+
+
