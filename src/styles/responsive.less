@@ -54,7 +54,6 @@
 
     // section creators
     .creators{
-
         &__more{
             flex-direction: column;
             gap: 2em;
@@ -68,7 +67,6 @@
         grid-gap: 2em;
         place-content: center;
     }
-
 }
 
 
@@ -86,19 +84,29 @@
     }
 
     .nav{
-        img{
+        &__toggle{
             display: block;
         }
+
+        // &__menuHamburguer{
+        //     background-color: black;
+        //     color: #fff;
+        //     z-index: 2;
+        //     width: 100vw;
+        //     height: 100vh;
+        //     padding: 1em;
+        // }
     }
     .nav__list{
         display: none;
     }
 
+
     .about{
         
         &__text{
             padding: 3em 10em;
-
+    
             h2{
                 font-size: 2em;
             }
@@ -109,6 +117,9 @@
 
     // estilizando o btn da section creators
     .creators{
+        h2{
+            font-size: 2em;
+        }
 
         text-align: center;
 
@@ -154,11 +165,27 @@
 
 // mobile
 @media (max-width: 900px){
+
     .header{
         background-image: url('../images/mobile/image-hero.jpg');
         background-repeat: no-repeat;
         background-size: cover;
-        padding: 3em;
+        padding: 2em;
+        height: 100vh;
+
+        &__container{
+            margin-bottom: 12em;
+        }
+
+        &__title{
+            font-size: 1em;
+            max-width: 800px;
+            // padding: 0em;
+
+            h1{
+                padding: 1em;
+            }
+        }
     }
     
     // section about
@@ -168,10 +195,6 @@
         }
         &__text{
             padding: 2em;
-
-            h2{
-                font-size: 2em;
-            }
         }
     }
 }
