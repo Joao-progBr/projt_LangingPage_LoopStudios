@@ -21,10 +21,13 @@
                 <div>
                     <a href="#"><img src="./build/images/logo.svg" alt=""></a>
                 </div>
-                <!-- <button class="nav__toggle" aria-label="Abrir menu"> -->
-                <img src="./build/images/icon-hamburger.svg" alt="">
-                <!-- </button> -->
-                <nav class="nav">
+                <button class="header__menuHamburguer" aria-label="Abrir menu" id="openMenu">
+                    <img src="./build/images/icon-hamburger.svg" alt="">
+                </button>
+                <nav class="nav" id="mobileMenu">
+                    <button class="header__closeMenuHamburguer" aria-label="Fechar menu" id="closeMenu">
+                        <img src="./build/images/icon-close.svg" alt="Fechar menu">
+                    </button>
                     <ul class="nav__list">
                         <li>
                             <a href="#">About</a>
@@ -43,28 +46,6 @@
                         </li>
                     </ul>
 
-                    <!-- <div class="nav__menuHamburguer">
-                        <div>
-                            <img src="./build/images/logo.svg" alt="">
-                        </div>
-                        <ul>
-                            <li>
-                                <a href="#">About</a>
-                            </li>
-                            <li>
-                                <a href="#">Careers</a>
-                            </li>
-                            <li>
-                                <a href="#">Events</a>
-                            </li>
-                            <li>
-                                <a href="#">Products</a>
-                            </li>
-                            <li>
-                                <a href="#"> Support</a>
-                            </li>
-                        </ul>
-                    </div> -->
                 </nav>
             </div>
 
@@ -73,6 +54,7 @@
             </div>
         </div>
     </header>
+
     <main>
         <div class="container">
             <section class="about">
@@ -174,10 +156,10 @@
                     </ul>
                 </div>
                 <button class="btn" type="button">See all</button>
-
             </section>
         </div>
     </main>
+
     <footer class="footer">
         <div class="container">
             <div class="footer__flex">
@@ -235,9 +217,6 @@
             </div>
         </div>
     </footer>
-
-
-
 
     <script src="./build/scripts/main.min.js"></script>
 
