@@ -15,7 +15,7 @@
 
     h2{
         font-size: 4em;
-        font-family: "Josefin Sans", sans-serif;
+        .josefin-sans();
         font-weight: 300;
         text-transform: uppercase;
         margin-bottom: 1em;
@@ -28,7 +28,7 @@
         border: 1px solid #000;
         padding: 1.3em 3.5em;
         text-transform: uppercase;
-        font-family:"Josefin Sans", sans-serif ;
+        .josefin-sans();
         letter-spacing: .5em;
         text-align: center;
         cursor: pointer;
@@ -68,7 +68,7 @@
     }
 
     &:hover::after{
-         background: linear-gradient(180deg, #fffa 40%, #555a)
+        background: linear-gradient(180deg, #fffa 40%, #555a)
     }
 
     h3{
@@ -79,14 +79,13 @@
         z-index: 1;
         text-transform: uppercase;
         color: @colorWhite;
-        font-family: "Josefin Sans", sans-serif;
+        .josefin-sans();
         font-weight: 300;
 
     }
     &:hover h3{
         color: #000;
     }
-
 }
 
 
